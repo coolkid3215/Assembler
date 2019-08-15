@@ -27,7 +27,7 @@ class Assembler:
     def reader(self,fileName):      #Read the .s43 file line by line
         cutOut = fileName.find('.s43')
         listFile = open(fileName[:cutOut]+'.lst','w')
-        listFile.write('Isaac Morales \t R11453173 \n')
+        listFile.write('Isaac Morales \t RNumber \n')
         sentence = ' '
         self.address = '0200'
         self.file = open(fileName, "r")
